@@ -1,375 +1,114 @@
-/*******************************************************************************
-Slate Theme for GitHub Pages
-by Jason Costello, @jsncostello
-*******************************************************************************/
+<!DOCTYPE html>
 
-@import url(github-light.css);
+<html>
 
-/*******************************************************************************
-MeyerWeb Reset
-*******************************************************************************/
+	<head>
+		
+		<meta charset='utf-8'>
+		
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		
+		<meta name="description" content="Bhop-script : CS:GO Bhop Script">
+		
+		<link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+		
+		<link rel="icon" type="image/ico" href="https://raw.githubusercontent.com/voides/Bhop-Script/gh-pages/images/bhop.ico" sizes="32x32">
+		
+		<title>Voides Bhop Script</title>
+	
+	</head>
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  vertical-align: baseline;
-}
+	<style>
+		#yes-safe {
+		color: #4CAF50;
+		}
+	</style>
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+	<body>
 
-ol, ul {
-  list-style: none;
-}
+    <div id="header_wrap" class="outer">
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+		<header class="inner-header">
 
-/*******************************************************************************
-Theme Styles
-*******************************************************************************/
+			<a id="forkme_banner" href="https://www.YouTube.com/" target="_blank">View on YouTube</a>
 
-body {
-  box-sizing: border-box;
-  color:#010101;
-  background: #010101;
-  font-size: 16px;
-  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
+			<h1 id="project_title">Bhop Script</h1>
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 10px 0;
-  font-weight: 700;
-  color:#222222;
-  font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
-  letter-spacing: -1px;
-}
+			<h2 id="project_tagline">For Counter-Strike: Global Offensive</h2>
 
-h1 {
-  font-size: 56px;
-  font-weight: 700;
-}
+        </header>
 
-h2 {
-  padding-bottom: 10px;
-  font-size: 42px;
-  background: url('../images/bg_hr.png') repeat-x bottom;
-}
+	</div>
+	
+    <div id="main_content_wrap" class="outer">
+	
+		<section id="main_content" class="inner">
+			<section id="content" class="inner-content">
 
-h3 {
-  text-align: center;
-  font-size: 36px;
-}
+			<h3>How Does It Work?</h3>
 
-h4 {
-  font-size: 21px;
-}
+			<p>Instead of making you download AutoHotkey and then downloading a script that will only work on flat surfaces,
+			I've made my script in Visual Studio. Unfortunately, it will only work on Windows (sorry Mac users), and you will need <a href="https://www.microsoft.com/en-us/download/details.aspx?id=42642" target="_blank">Microsoft .NET Framework 4.5.2</a>
+			or higher for it to work. The script works by using external cues on your PC while playing CS:GO to jump. Instead of injecting into CS:GO, or having the need to
+			require numerous .dll files, it reads keystrokes, sound, and cursor movement while you hold down space. This is so the script can't get detected. 
+			No information from your computer will be sent anywhere, you wouldn't be able <span class="center-text">to use this offline if that was the case.</span></p>
 
-h5 {
-  font-size: 18px;
-}
+			<br>
 
-h6 {
-  font-size: 16px;
-}
+			<h3>Is It Detected By VAC?</h3>
 
-p {
-  font-size: 24px;
-  text-align: center;
-  text-align: justify;
-  margin: 10px 0 15px 0;
-}
+			<img src="https://raw.githubusercontent.com/voides/Bhop-Script/gh-pages/images/CSGOVACBan.png" alt="CS:GO VAC Ban Message" style="width:600px" id="VAC">
 
-footer p {
-  color: #f2f2f2;
-}
+			<p><strong>No.</strong> This can't be detected by VAC, even though it's a .exe program. The reason why, is because the script only modifies
+			your keystrokes. It doesn't change the game at all. Which means that no offset updates, or CS:GO updates will stop the script from working.
+			As long as you have <span class="center-text">"+jump" bound to space, you're good to go.</span></p>
 
-a {
-  text-decoration: none;
-  color: #007edf;
-  text-shadow: none;
+		<br>
 
-  transition: color 0.5s ease;
-  transition: text-shadow 0.5s ease;
-  -webkit-transition: color 0.5s ease;
-  -webkit-transition: text-shadow 0.5s ease;
-  -moz-transition: color 0.5s ease;
-  -moz-transition: text-shadow 0.5s ease;
-  -o-transition: color 0.5s ease;
-  -o-transition: text-shadow 0.5s ease;
-  -ms-transition: color 0.5s ease;
-  -ms-transition: text-shadow 0.5s ease;
-}
+			<h3>Can I Get Banned?</h3>
 
-a:hover, a:focus {text-decoration: underline;}
+			<p><strong>Yes.</strong> It is possible, but it will <strong>not</strong> be a VAC ban. Whenever you cheat, there is always a chance you will be banned. But if you use the script appropriately, you don't have
+			to worry as much, or even at all. The only way you can get banned using this, is through the <a href="http://blog.counter-strike.net/index.php/overwatch/" target="_blank">CS:GO Overwatch System</a>.
+			But, like I said earlier, if you use the script properly, you don't have to worry as much <span class="center-text">about being banned.</span></p>
 
-footer a {
-  color: #F2F2F2;
-  text-decoration: underline;
-}
+			<br>
 
-em {
-  font-style: italic;
-}
+			<h3>Is It Safe For My Computer?</h3>
 
-strong {
-  font-weight: bold;
-}
+			<p><span id="yes-safe"><strong>Yes, this program is 100% safe.</strong></span> Sadly, it <em>will</em> show up as a virus on your computer. But this is only because I didn't use
+			an application protector on it. If you want to be sure it's safe to use, decompile the code and see for yourself. But if you don't want to
+			download the script, you <span class="center-text">don't have to.</span></p>
+			<p>Please <strong>DO NOT</strong> use virustotal to back up your claim that this is a virus. Virustotal has been giving my programs false
+			positives for as long as I've been making them. I can even run a blank program through it and it'll still get flagged.
+			Unless you are experiencing weird things on your computer after you download this, then don't say anything. It gets really annoying,
+			and I may remove or block your comments from my channel if you continue to spread false <span class="center-text">information about the script.</span></p>
 
-img {
-  position: relative;
-  margin: 0 auto;
-  max-width: 739px;
-  padding: 0px;
-  margin: 10px 0 10px 0;
-  border: 1px solid #ebebeb;
+			<br>
+			
+			<h3>Download</h3>
+			
+			<a id="download" href="https://www.mediafire.com/" target="_blank">Download</a>
+			
+			<p>Please let me know if you have any problems.</p>
 
-  box-shadow: 0 0 5px #ebebeb;
-  -webkit-box-shadow: 0 0 5px #ebebeb;
-  -moz-box-shadow: 0 0 5px #ebebeb;
-  -o-box-shadow: 0 0 5px #ebebeb;
-  -ms-box-shadow: 0 0 5px #ebebeb;
-}
+			</section>
 
-p img {
-  display: inline;
-  margin: 0;
-  padding: 0;
-  vertical-align: middle;
-  text-align: center;
-  border: none;
-}
+		</section>
 
-pre, code {
-  width: 100%;
-  color: #222;
-  background-color: #fff;
+	</div>
 
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  font-size: 14px;
+    <div id="footer_wrap" class="outer">
 
-  border-radius: 2px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-}
+			<footer class="inner">
 
-pre {
-  width: 100%;
-  padding: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
-  overflow: auto;
-}
+				<p class="copyright">Bhop Script maintained by <a href="https://github.com/voides">voides</a></p>
+				
+				<p class="copyright">Published with <a href="https://pages.github.com">GitHub Pages</a></p>
 
-code {
-  padding: 3px;
-  margin: 0 3px;
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
-}
+			</footer>
 
-pre code {
-  display: block;
-  box-shadow: none;
-}
+		</div>
 
-blockquote {
-  color: #666;
-  margin-bottom: 20px;
-  padding: 0 0 0 20px;
-  border-left: 3px solid #bbb;
-}
+	</body>
 
-
-ul, ol, dl {
-  margin-bottom: 15px
-}
-
-ul {
-  list-style-position: inside;
-  list-style: disc;
-  padding-left: 20px;
-}
-
-ol {
-  list-style-position: inside;
-  list-style: decimal;
-  padding-left: 20px;
-}
-
-dl dt {
-  font-weight: bold;
-}
-
-dl dd {
-  padding-left: 20px;
-  font-style: italic;
-}
-
-dl p {
-  padding-left: 20px;
-  font-style: italic;
-}
-
-hr {
-  height: 1px;
-  margin-bottom: 5px;
-  border: none;
-  background: url('../images/bg_hr.png') repeat-x center;
-}
-
-table {
-  border: 1px solid #373737;
-  margin-bottom: 20px;
-  text-align: left;
- }
-
-th {
-  font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  padding: 10px;
-  background: #373737;
-  color: #fff;
- }
-
-td {
-  padding: 10px;
-  border: 1px solid #373737;
- }
-
-form {
-  background: #f2f2f2;
-  padding: 20px;
-}
-
-/*******************************************************************************
-Full-Width Styles
-*******************************************************************************/
-
-.outer {
-  width: 100%;
-}
-
-.inner {
-  position: relative;
-  max-width: 100%;
-  padding: 20px 10px;
-  margin: auto;
-}
-
-.inner-header {
-  position: relative;
-  max-width: 60%;
-  padding: 20px 10px;
-  margin: auto;
-}
-
-.inner-content {
-  position: relative;
-  max-width: 50%;
-  margin: auto;
-}
-
-.center-text {
-  text-align: center;
-}
-
-#VAC {
-  display: block;
-  margin: auto;
-}
-
-#forkme_banner {
-  display: block;
-  position: absolute;
-  top:0;
-  right: 10px;
-  z-index: 10;
-  padding: 10px 10px 10px 10px;
-  color: #fff;
-  background: #bb0000;
-  font-weight: 700;
-  box-shadow: 0 0 10px rgba(0,0,0,.5);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-}
-
-#header_wrap {
-  background: #010101;
-}
-
-#header_wrap .inner {
-  padding: 50px 10px 30px 10px;
-}
-
-#project_title {
-  margin: 0;
-  color: #fff;
-  font-size: 42px;
-  font-weight: 700;
-  text-shadow: #111 0px 0px 10px;
-}
-
-#project_tagline {
-  color: #fff;
-  font-size: 32px;
-  font-weight: 300;
-  background: none;
-  text-shadow: #111 0px 0px 10px;
-}
-
-#project_dlinfo {
-  color: #fff;
-  font-size: 16px;
-  font-weight: 300;
-  margin: 0px;
-  background: none;
-  text-shadow: #111 0px 0px 10px;
-}
-
-#download {
-    display: block;
-    position: relative;
-    margin: 15px auto;
-    width: 72px;
-    z-index: 10;
-    padding: 10px 10px 10px 10px;
-    color: #fff;
-    background: #00e461;
-    font-weight: 700;
-    box-shadow: 0 0 10px rgba(0,0,0,.5);
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
-}
-
-#main_content_wrap {
-  background: #fafafa;
-  border-top: 1px solid #111;
-  border-bottom: 1px solid #111;
-}
-
-#main_content {
-  padding-top: 40px;
-}
-
-#footer_wrap {
-  background: #010101;
-}
+</html>

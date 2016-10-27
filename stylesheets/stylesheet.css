@@ -273,6 +273,11 @@ Full-Width Styles
   margin: 0 auto;
 }
 
+#VAC {
+  display: block;
+  margin: auto;
+}
+
 #forkme_banner {
   display: block;
   position: absolute;

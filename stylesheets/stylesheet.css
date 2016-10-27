@@ -269,6 +269,13 @@ Full-Width Styles
 
 .inner {
   position: relative;
+  max-width: 100%;
+  padding: 20px 10px;
+  margin: auto;
+}
+
+.inner-header {
+  position: relative;
   max-width: 60%;
   padding: 20px 10px;
   margin: auto;

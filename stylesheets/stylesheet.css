@@ -97,7 +97,6 @@ h6 {
 p {
   font-size: 24px;
   text-align: center;
-  text-align: justify;
   margin: 10px 0 15px 0;
 }
 
@@ -286,6 +285,11 @@ Full-Width Styles
   position: relative;
   max-width: 50%;
   margin: auto;
+}
+
+.text-justify {
+  text-align: center;
+  text-align: justify;
 }
 
 .center-text {

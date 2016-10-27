@@ -270,7 +270,7 @@ Full-Width Styles
   position: relative;
   max-width: 640px;
   padding: 20px 10px;
-  margin: auto;
+  margin: 0px 250px 0px 250px;
 }
 
 #VAC {

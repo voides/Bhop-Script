@@ -287,15 +287,6 @@ Full-Width Styles
   margin: auto;
 }
 
-.text-justify {
-  text-align: center;
-  text-align: justify;
-}
-
-.center-text {
-  text-align: center;
-}
-
 #VAC {
   display: block;
   margin: auto;

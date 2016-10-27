@@ -268,9 +268,8 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 640px;
   padding: 20px 10px;
-  margin: 0px 250px 0px 250px;
+  margin: 0px 250px;
 }
 
 #VAC {

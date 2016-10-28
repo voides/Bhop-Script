@@ -287,6 +287,10 @@ Full-Width Styles
   margin: auto;
 }
 
+.copyright {
+  font-size: 16px;
+}
+
 #VAC {
   display: block;
   margin: auto;

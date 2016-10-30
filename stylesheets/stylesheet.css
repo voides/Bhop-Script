@@ -291,6 +291,11 @@ Full-Width Styles
   font-size: 16px;
 }
 
+#YouTube {
+  display: block;
+  margin: auto;
+}
+
 #modes {
   font-size: 18px;
 }

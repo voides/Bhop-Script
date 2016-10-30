@@ -291,6 +291,10 @@ Full-Width Styles
   font-size: 16px;
 }
 
+#modes {
+  font-size: 18px;
+}
+
 #VAC {
   display: block;
   margin: auto;

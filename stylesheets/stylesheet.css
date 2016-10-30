@@ -300,6 +300,11 @@ Full-Width Styles
   margin: auto;
 }
 
+#Virustotal {
+  display: block;
+  margin: auto;
+}
+
 #forkme_banner {
   display: block;
   position: absolute;
